@@ -1,66 +1,67 @@
 ---
 permalink: /
-title: "Zhuo An (Not Finished)"
+title: "Zhuo An - Ph.D. Candidate in Mechanical Systems and Control"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-😊Short Biography
-=================
 
-I am **Zhuo An (卓安)** , a first-year student for Ph.D. degree from the College of Engineering at Peking University, majoring in Mechanical Systems and Control.
+👤 About Me
+========
 
-My primary research interests focus on decision-making and control of multi-agent systems.
+I am **Zhuo An (卓安)**, a Ph.D. candidate in Mechanical Systems and Control at Peking University's College of Engineering. My research focuses on decision-making and control of multi-agent systems, with particular expertise in drone algorithm development and robotics. I am proficient in ROS platform and PX4-based drone development, and have extensive experience with simulation platforms like Gazebo.
 
-I am proficient in drone algorithm development based on the ROS platform and PX4, also familiar with the simulation platform Gazebo. I have strong engineering practice skills and project experience, and have participated multiple times in national robotics competitions ROBOCUP.
+🎓 Education
+=========
 
-🏫Educations
-============
+**Ph.D. in Mechanical Systems and Control**  
+College of Engineering, Peking University (PKU)  
+September 2024 - Present (Expected: 2029)
 
-**🎓Ph.D. in Mechanical Systems and Control**
+- **Research Focus**: Decision-Making and Control in Multi-Agent Systems
+- **Advisor**: [Prof. Zhongkui Li](https://www.zhongkuili-pku.com/home/)
+- **Relevant Coursework**: Control Theory, Robotics, Optimization, Artificial Intelligence
+- **Research Interests**: Multi-agent systems, UAV control, Robotics, Decision-making algorithms
 
-College of Engineering, Peking University (PKU)
-
-September 2024 - Present
-
-- Thesis Topic: Decision-Making and Control in Multi-Agent Systems
-- Relevant Coursework: Control Theory, Robotics, Optimization, Artificial Intelligence
-- Advisor: [ZHONGKUI LI](https://www.zhongkuili-pku.com/home/)
-
-**🎓Bachelor of Engineering in Automation**
-
-College of Intelligence Science and Technology, National University of Defense Technology (NUDT)
-
+**Bachelor of Engineering in Automation**  
+College of Intelligence Science and Technology, National University of Defense Technology (NUDT)  
 September 2020 - July 2024
 
-* Advisor: Xiangke Wang
+- **Advisor**: Prof. Xiangke Wang
+- **GPA**: 3.80
+- **Relevant Coursework**: Control Systems, Robotics, Computer Vision, Machine Learning
 
-🚀Projects
-==========
+🚀 Research Projects
+================
 
-✈️Simulation platform -- **XTDrone** [[github]](https://github.com/robin-shaun/XTDrone) [[gitee]](https://gitee.com/robin_shaun/XTDrone)
+**XTDrone: A Comprehensive UAV Simulation Platform**  
+*Lead Developer and Community Maintainer*  
+[[GitHub]](https://github.com/robin-shaun/XTDrone) [[Gitee]](https://gitee.com/robin_shaun/XTDrone)
 
-> XTDrone is a UAV simulation platform based on PX4, ROS and Gazebo. XTDrone supports mulitrotors, fixed wings, VTOLs and other unmanned systems. It's convenient to deploy the algorithm to real UAVs after testing and debugging on the simulation platform.
+- Led version upgrade and plugin development initiatives
+- Achieved Gitee Most Valuable Open Source Project (GVP) status
+- Maintained active community with 1.1k+ stars on both GitHub and Gitee
+- Developed and integrated new features for multirotors, fixed wings, and VTOLs
+- Facilitated seamless transition from simulation to real UAV deployment
 
-* Description: The version upgrade, plugin development and community maintenance
-* Awards & Achievement:
-  * Gitee most Valuable open source Project (GVP)
-  * Both Github and Gitee have ⭐1.1k+
+🏆 Awards & Honors
+==============
 
-🏆Awards & 📖Scholarship
-========================
+**Scholarships**
+- National Scholarship (2021, 2022)
+- China Aerospace Science and Technology Corporation (CASC) Scholarship (2023)
+- Wu Yundong Scholarship from Northwest Institute of Mechanical & Electrical Engineering (2022)
 
-**Ph.D. Candidate**
+**Competitions**
+- First Prize, Drone Challenge Competition, 2024 China Robot Competition and RoboCup Robot World Cup China Competition (2023)
+- First Place Award, 7th International Competition of Military Technical College Lt. General Ibrahim Selim Award (ICMTC2023), Cairo, Egypt (2023)
+- Special Prize, 6th Military Modeling Competition (2022)
 
-* The Future is Promising😉.
+📧 Contact
+=======
 
-**Bachelor**
-
-* 12/2022 📖National Scholarship
-* 12/2021 📖National Scholarship
-* 12/2023 📖China Aerospace Science and Technology Corporation (CASC) Scholarship
-* 06/2022 📖Wu Yundong Scholarship from Northwest Institute of Mechanical & Electrical Engineering
-* 10/2023 🏆First Prize in drone physical competition, Drone Challenge Competition, 2024 China Robot Competition and RoboCup Robot World Cup China Competition
-* 07/2023 🏆First Place Award in the 7-th International Competition of Military Iechnical College Lt. General Ibrahim Selim Award (ICMTC2023) Cairo, Egypt, 15-20 July, 2023
-* 12/2022 🏆Special Prize in the 6th Military Modeling Competition, 2022
+- **Email**: zhuoan@stu.pku.edu.cn
+- **GitHub**: [andy-zhuo-02](https://github.com/andy-zhuo-02)
+- **Gitee**: [andy_zhuo](https://gitee.com/andy_zhuo)
+- **Location**: Beijing, China
