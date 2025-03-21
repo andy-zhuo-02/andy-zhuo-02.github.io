@@ -2,8 +2,8 @@
 title: "XTDrone - UAV Simulation Platform"
 type: portfolio
 permalink: /portfolio/2024-xtdrone
-date: 2024-01-01
 location: "Peking University"
+collection: portfolio
 ---
 
 **Project Overview**:
@@ -28,8 +28,7 @@ XTDrone is a comprehensive UAV simulation platform that integrates PX4, ROS, and
 - PX4 Autopilot
 - Gazebo Simulator
 - Python, C++
-- Git, GitHub/Gitee
 
 **Links**:
-- [[GitHub]](https://github.com/robin-shaun/XTDrone)
-- [[Gitee]](https://gitee.com/robin_shaun/XTDrone) 
+- [XTDrone[GitHub]](https://github.com/robin-shaun/XTDrone)
+- [XTDrone[Gitee]](https://gitee.com/robin_shaun/XTDrone) 

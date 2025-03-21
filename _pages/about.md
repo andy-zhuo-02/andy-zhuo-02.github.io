@@ -7,10 +7,15 @@ redirect_from:
   - /about.html
 ---
 
+---
+
 👤 About Me
 ========
 
 I am **Zhuo An (卓安)**, a Ph.D. candidate in Mechanical Systems and Control at Peking University's College of Engineering. My research focuses on decision-making and control of multi-agent systems, with particular expertise in drone algorithm development and robotics. I am proficient in ROS platform and PX4-based drone development, and have extensive experience with simulation platforms like Gazebo.
+
+
+---
 
 🎓 Education
 =========
@@ -32,6 +37,9 @@ September 2020 - July 2024
 - **GPA**: 3.80
 - **Relevant Coursework**: Control Systems, Robotics, Computer Vision, Machine Learning
 
+
+---
+
 🚀 Research Projects
 ================
 
@@ -45,6 +53,9 @@ September 2020 - July 2024
 - Developed and integrated new features for multirotors, fixed wings, and VTOLs
 - Facilitated seamless transition from simulation to real UAV deployment
 
+
+---
+
 🏆 Awards & Honors
 ==============
 
@@ -57,6 +68,9 @@ September 2020 - July 2024
 - First Prize, Drone Challenge Competition, 2024 China Robot Competition and RoboCup Robot World Cup China Competition (2023)
 - First Place Award, 7th International Competition of Military Technical College Lt. General Ibrahim Selim Award (ICMTC2023), Cairo, Egypt (2023)
 - Special Prize, 6th Military Modeling Competition (2022)
+
+
+---
 
 📧 Contact
 =======
