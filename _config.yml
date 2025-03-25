@@ -21,13 +21,13 @@ repository               : "andy-zhuo-02/andy-zhuo-02.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "photo.png"
+  avatar           : "personal_photo_cut.jpg"
   name             : "Zhuo An"
-  pronouns         : # example: "she/her"  
-  bio              : # "Short biography for the left-hand sidebar"
+  pronouns         : "he/him"  
+  bio              : "Ph.D. Candidate in CoE, PKU"
   location         : "Beijing, China"
   employer         : "Peking University"
-  uri              : # URL
+  uri              : "https://andy-zhuo-02.github.io"
   email            : "zhuoan@stu.pku.edu.cn" 
 
   # Academic websites
