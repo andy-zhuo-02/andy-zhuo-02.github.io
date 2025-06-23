@@ -21,7 +21,7 @@ repository               : "andy-zhuo-02/andy-zhuo-02.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "personal_photo_cut.jpg"
+  avatar           : "personal_photo.jpg"
   name             : "Zhuo An"
   pronouns         : "he/him"  
   bio              : "Ph.D. Candidate in CoE, PKU"

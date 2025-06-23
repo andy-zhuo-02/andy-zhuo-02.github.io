@@ -5,21 +5,28 @@ permalink: /publications/
 author_profile: true
 ---
 
-<div style="text-align: center; padding: 50px 0;">
-  <h2>📚 Publications</h2>
-  <p style="font-size: 1.2em; color: #666;">
-    Publications are coming soon! Stay tuned for updates.
-  </p>
-  <p style="color: #888;">
-    I am currently working on research projects in multi-agent systems and UAV control.
-  </p>
-</div> 
+{% include base_path %}
+
+<div class="publications-container">
+  <section class="publication-section">
+    <h2>Preprints</h2>
+    
+    <div class="publication-item">
+      <h3>Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots</h3>
+      <p class="authors"><em>Yike Qiao, Xiaodong He, <strong>An Zhuo</strong>, Zhiyong Sun, Weimin Bao, Zhongkui Li</em></p>
+      <p class="venue">arXiv preprint (2025)</p>
+      <p class="links">
+        <a href="https://arxiv.org/abs/2504.02852" target="_blank">📄 Paper</a> | 
+        <a href="https://arxiv.org/abs/2504.02852" target="_blank">🔗 arXiv:2504.02852</a>
+      </p>
+      <p class="contribution"><em>Contribution: Designed and conducted experiments in the paper</em></p>
+    </div>
+  </section>
+</div>
 
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
-
-{% include base_path %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
@@ -41,3 +48,70 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
+
+<style>
+.publications-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-section {
+  margin-bottom: 40px;
+}
+
+.publication-section h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.publication-item {
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #007acc;
+}
+
+.publication-item h3 {
+  color: #007acc;
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.authors {
+  color: #666;
+  margin: 5px 0;
+  font-size: 0.95em;
+}
+
+.venue {
+  color: #888;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.links {
+  margin: 10px 0;
+}
+
+.links a {
+  color: #007acc;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.contribution {
+  color: #555;
+  font-style: italic;
+  margin: 10px 0 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+</style>
