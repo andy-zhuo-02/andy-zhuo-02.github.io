@@ -4,7 +4,14 @@ type: portfolio
 permalink: /portfolio/2025-go2-ros2-toolbox
 location: "Peking University"
 collection: portfolio
+excerpt: "A comprehensive ROS2 toolbox for Unitree Go2 EDU robot, providing SLAM and navigation capabilities for autonomous operation."
+header:
+  teaser: /go2_ros2_toolbox/demo.gif
 ---
+
+<div align="center" style="margin-bottom: 25px;">
+  <img src="/images/go2_ros2_toolbox/demo.gif" alt="Go2 ROS2 Toolbox Demo" width="100%">
+</div>
 
 **Project Overview**:
 Go2 ROS2 Toolbox is a comprehensive ROS2 toolbox for Unitree Go2 EDU robot, providing SLAM and navigation capabilities for autonomous operation. Built specifically for ROS2 Foxy ecosystem on Ubuntu 20.04.
