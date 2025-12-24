@@ -9,15 +9,26 @@
 .sidebar {
   -webkit-transform: translate3d(0, 0 , 0);
           transform: translate3d(0, 0 , 0);
+  background-color: #eeeeee;
+  position: relative;
 
   @include clearfix();
   margin-bottom: 1em;
 
-  @media screen and (min-width: $sidebar-screen-min-width) {
-    height: 100vh;
-    overflow-y: auto;               // Add scrollbar if the sidebar is too long
-    position: fixed;
-    padding-top: $masthead-height;
+  // Ensure background covers entire sidebar area including padding
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eeeeee;
+    z-index: -1;
+    
+    @media screen and (min-width: $sidebar-screen-min-width) {
+      right: 0;
+    }
   }
 
   @include breakpoint($large) {
@@ -25,6 +36,8 @@
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-in-out;
             transition: opacity 0.2s ease-in-out;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 
     &:hover {
       opacity: 1;
@@ -33,7 +46,32 @@
 
   @include breakpoint($x-large) {
     max-width: $sidebar-link-max-width;
-    padding-right: 0;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  @media screen and (min-width: $sidebar-screen-min-width) {
+    height: 100vh;
+    overflow-y: auto;               // Add scrollbar if the sidebar is too long
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: $masthead-height;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    background-color: #eeeeee;
+    
+    @include breakpoint($large) {
+      width: span(2 of 12);
+      max-width: span(2 of 12);
+    }
+    
+    @include breakpoint($x-large) {
+      max-width: $sidebar-link-max-width;
+      width: $sidebar-link-max-width;
+      padding-left: 1.5em;
+      padding-right: 1.5em;
+    }
   }
 
   h2, h3, h4, h5, h6 {

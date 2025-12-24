@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Zhuo An - Ph.D. Candidate in Mechanical Systems and Control"
+title: "Hi, there 👋  I'm Zhuo An（卓安）"
 author_profile: true
 redirect_from: 
   - /about/
@@ -11,94 +11,101 @@ redirect_from:
 👤 About Me
 ===========
 
-I am **Zhuo An (卓安)**, a Ph.D. candidate at School of Advanced Manufacturing and Robotics, Peking University. My research focuses on decision-making and control of multi-agent systems, with particular expertise in drone algorithm development and robotics. I am proficient in ROS platform and PX4-based drone development, and have extensive experience with simulation platforms like Gazebo.
+I am **Zhuo An (卓安)**, a Ph.D. candidate at School of Advanced Manufacturing and Robotics, Peking University. 
+
+My research focuses on task planning and control of multi-agent systems.
 
 ---
 
-🎓 Education
-============
+📰 News
+===========
+<div class="module-divider"></div>
+<div class="news-item">
+  <div class="news-header">
+    <span class="news-date">Nov 2025</span>
+    <span class="news-links">
+      <a href="https://arxiv.org/abs/2504.02852" class="news-link" target="_blank">📄 arXiv</a>
+    </span>
+  </div>
+  <span class="news-content">Accepted <b>T-RO</b> Paper: <i><u>Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots</u></i>, Yike Qiao, Xiaodong He, <b>An Zhuo</b>, Zhiyong Sun, Weimin Bao, Zhongkui Li</span>
+</div>
 
-**Ph.D. in Mechanical Systems and Control**
+<div class="news-item">
+  <div class="news-header">
+    <span class="news-date">Aug 2025</span>
+    <span class="news-links">
+      <a href="https://github.com/andy-zhuo-02/XTDrone2" class="news-link" target="_blank">🔗 GitHub</a>
+    </span>
+  </div>
+  <span class="news-content">Release <b>repository</b> <i><u>XTDrone2</u></i>: UAV Simulation Platform based on PX4, ROS2 and Gazebo Ignition.</span>
+</div>
 
-School of Advanced Manufacturing and Robotics, Peking University (PKU)
+<div class="news-item">
+  <div class="news-header">
+    <span class="news-date">June 2025</span>
+    <span class="news-links">
+      <a href="https://github.com/andy-zhuo-02/go2_ros2_toolbox" class="news-link" target="_blank">🔗 GitHub</a>
+      <a href="https://www.bilibili.com/video/BV1ioN9zrEpf" class="news-link" target="_blank">🔗 Video</a>
+    </span>
+  </div>
+  <span class="news-content">Release <b>repository</b> <i><u>go2_ros2_toolbox</u></i>: A comprehensive ROS2 toolbox for Unitree Go2 EDU robot, providing SLAM and navigation capabilities for autonomous operation.</span>
+</div>
 
-September 2024 - Present (Expected: 2029)
-
-- **Research Focus**: Decision-Making and Control in Multi-Agent Systems
-- **Advisor**: [Prof. Zhongkui Li](https://www.zhongkuili-pku.com/home/)
-- **Relevant Coursework**: Control Theory, Robotics, Optimization, Artificial Intelligence
-- **Research Interests**: Multi-agent systems, UAV control, Robotics, Decision-making algorithms
-
-**Bachelor of Engineering in Automation**
-
-College of Intelligence Science and Technology, National University of Defense Technology (NUDT)
-
-September 2020 - July 2024
-
-- **Advisor**: Prof. Xiangke Wang
-- **GPA**: 3.80
-- **Relevant Coursework**: Control Systems, Robotics, Computer Vision, Machine Learning
-
----
-
-🚀 Research Projects
-====================
-
-**XTDrone: A Comprehensive UAV Simulation Platform**
-
-*Lead Developer and Community Maintainer*[[GitHub]](https://github.com/robin-shaun/XTDrone) [[Gitee]](https://gitee.com/robin_shaun/XTDrone)
-
-- Led version upgrade and plugin development initiatives
-- Achieved Gitee Most Valuable Open Source Project (GVP) status
-- Maintained active community with 1.1k+ stars on both GitHub and Gitee
-- Developed and integrated new features for multirotors, fixed wings, and VTOLs
-- Facilitated seamless transition from simulation to real UAV deployment
-
-**Go2 ROS2 Toolbox: A Comprehensive ROS2 Toolbox for Unitree Go2 Robot**
-
-*Developer*[[GitHub]](https://github.com/andy-zhuo-02/go2_ros2_toolbox)
-[[Gitee]](https://gitee.com/andy_zhuo/go2_ros2_toolbox)
-[[Video]](https://www.bilibili.com/video/BV1ioN9zrEpf)
-
-- Developed a comprehensive ROS2 toolbox for Unitree Go2 EDU robot
-- Integrated SLAM capabilities with SLAM Toolbox for autonomous mapping
-- Implemented full Navigation2 stack for autonomous navigation
-- Added LiDAR integration with real-time point cloud processing
-- Provided camera support with GStreamer-based capture and streaming
-- Built specifically for ROS2 Foxy ecosystem on Ubuntu 20.04
+<div class="news-item">
+  <div class="news-header">
+    <span class="news-date">Spring Semester 2025</span>
+    <span class="news-links">
+      <a href="https://andy-zhuo-02.github.io/teaching/2025-Engineering_Innovation" class="news-link" target="_blank">ℹ️ Info</a>
+    </span>
+  </div>
+  <span class="news-content"><b>Teaching Assistant</b> for <i><u>Engineering Innovation</u></i> course at Peking University</span>
+</div>
 
 ---
 
-📚 Publications
-===============
+📖 Publication
+==========
 
-**Preprints**
+<div class="module-divider"></div>
 
-- [Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots](https://arxiv.org/abs/2504.02852) - arXiv preprint (2025)
-  - *Authors: Yike Qiao, Xiaodong He, **An Zhuo**, Zhiyong Sun, Weimin Bao, Zhongkui Li*
-  - Contribution: Designed and conducted experiments in the paper
+{% include publication-card.html 
+   title="Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots"
+   title_url="https://arxiv.org/abs/2504.02852"
+   venue="T-RO 2025"
+   authors="Yike Qiao, Xiaodong He, <strong>An Zhuo</strong>, Zhiyong Sun, Weimin Bao, Zhongkui Li"
+   paper_url="https://arxiv.org/abs/2504.02852"
+   arxiv_url="https://arxiv.org/abs/2504.02852"
+   arxiv_id="2504.02852"
+   contribution="Contribution: Designed and conducted experiments in the paper"
+%}
 
----
+🚀 Open Source Project
+==========
 
-🏆 Awards & Honors
-==================
+<div class="module-divider"></div>
 
-**Scholarships**
+{% include project-card.html 
+   title="XTDrone: A Comprehensive UAV Simulation Platform"
+   role="Lead Developer and Community Maintainer"
+   github_url="https://github.com/robin-shaun/XTDrone"
+   gitee_url="https://gitee.com/robin_shaun/XTDrone"
+%}
 
-- National Scholarship (2021, 2022)
-- China Aerospace Science and Technology Corporation (CASC) Scholarship (2023)
-- Wu Yundong Scholarship from Northwest Institute of Mechanical & Electrical Engineering (2022)
+{% include project-card.html 
+   title="Go2 ROS2 Toolbox: A Comprehensive ROS2 Toolbox for Unitree Go2 Robot"
+   role="Developer"
+   image="/go2_ros2_toolbox/demo.gif"
+   image_alt="Go2 ROS2 Toolbox Demo"
+   github_url="https://github.com/andy-zhuo-02/go2_ros2_toolbox"
+   gitee_url="https://gitee.com/andy_zhuo/go2_ros2_toolbox"
+   video_url="https://www.bilibili.com/video/BV1ioN9zrEpf"
+%}
 
-**Competitions**
-
-- First Prize, Drone Challenge Competition, 2024 China Robot Competition and RoboCup Robot World Cup China Competition (2023)
-- First Place Award, 7th International Competition of Military Technical College Lt. General Ibrahim Selim Award (ICMTC2023), Cairo, Egypt (2023)
-- Special Prize, 6th Military Modeling Competition (2022)
-
----
 
 📧 Contact
 ==========
+
+<div class="module-divider"></div>
 
 - **Email**: zhuoan@stu.pku.edu.cn
 - **GitHub**: [andy-zhuo-02](https://github.com/andy-zhuo-02)

@@ -1,0 +1,86 @@
+{% include base_path %}
+
+{% comment %}
+  Project Card Component
+  
+  Parameters:
+  - title: Project title (required)
+  - role: Role/position in the project (optional)
+  - image: Image path relative to /images/ or full URL (optional)
+  - image_alt: Alt text for image (optional)
+  - description: Project description (optional, can be markdown)
+  - features: Array of features/achievements (optional, will be rendered as list)
+  - github_url: GitHub repository URL (optional)
+  - gitee_url: Gitee repository URL (optional)
+  - video_url: Video URL (optional)
+  - demo_url: Demo URL (optional)
+  - website_url: Website URL (optional)
+{% endcomment %}
+
+<div class="project-card">
+  <div class="project-card__content">
+    {% if include.image %}
+    <div class="project-card__image">
+      <img src="{% if include.image contains '://' %}{{ include.image }}{% else %}{{ include.image | prepend: '/images/' | prepend: base_path }}{% endif %}" 
+           alt="{{ include.image_alt | default: include.title }}">
+    </div>
+    {% endif %}
+    
+    <div class="project-card__body">
+      <div class="project-card__header">
+        <h3 class="project-card__title">{{ include.title }}</h3>
+        {% if include.role %}
+        <p class="project-card__role"><em>{{ include.role }}</em></p>
+        {% endif %}
+      </div>
+      
+      {% if include.description %}
+      <div class="project-card__description">
+        {{ include.description | markdownify }}
+      </div>
+      {% endif %}
+      
+      {% if include.features and include.features != "" and include.features != " " %}
+        {% assign features_list = include.features | split: "|" %}
+        {% assign features_count = 0 %}
+        {% for feature in features_list %}
+          {% assign trimmed_feature = feature | strip %}
+          {% if trimmed_feature != "" %}
+            {% assign features_count = features_count | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+        {% if features_count > 0 %}
+        <ul class="project-card__features">
+          {% for feature in features_list %}
+            {% assign trimmed_feature = feature | strip %}
+            {% if trimmed_feature != "" %}
+            <li>{{ trimmed_feature }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        {% endif %}
+      {% endif %}
+      
+      {% if include.github_url or include.gitee_url or include.video_url or include.demo_url or include.website_url %}
+      <div class="project-card__links">
+        {% if include.github_url %}
+        <a href="{{ include.github_url }}" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+        {% endif %}
+        {% if include.gitee_url %}
+        <a href="{{ include.gitee_url }}" target="_blank" rel="noopener noreferrer">🔗 Gitee</a>
+        {% endif %}
+        {% if include.video_url %}
+        <a href="{{ include.video_url }}" target="_blank" rel="noopener noreferrer">🎥 Video</a>
+        {% endif %}
+        {% if include.demo_url %}
+        <a href="{{ include.demo_url }}" target="_blank" rel="noopener noreferrer">🚀 Demo</a>
+        {% endif %}
+        {% if include.website_url %}
+        <a href="{{ include.website_url }}" target="_blank" rel="noopener noreferrer">🌐 Website</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+

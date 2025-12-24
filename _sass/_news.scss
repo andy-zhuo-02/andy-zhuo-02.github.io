@@ -1,0 +1,125 @@
+/* ==========================================================================
+   NEWS DATE BADGE
+   ========================================================================== */
+
+.module-divider {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  margin: 16px 0 24px 0;
+  border: none;
+}
+
+.news-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 8px 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.news-header {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  width: 100%;
+  flex-wrap: nowrap !important;
+  min-width: 0;
+  
+  > * {
+    flex-shrink: 0;
+  }
+}
+
+.news-links {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.news-date {
+  flex-shrink: 0;
+  display: inline-block;
+  background: linear-gradient(135deg, #007acc 0%, #005a9e 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 122, 204, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 120px;
+  text-align: center;
+  margin: 0;
+
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(0, 122, 204, 0.4);
+  }
+}
+
+.news-content {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.news-link {
+  display: inline-block;
+  color: #007acc;
+  text-decoration: none !important;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 3px;
+  background: rgba(0, 122, 204, 0.1);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    color: #005a9e;
+    background: rgba(0, 122, 204, 0.2);
+    text-decoration: none !important;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// Ensure horizontal layout on larger screens
+@media (min-width: 601px) {
+  .news-header {
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+}
+
+@include breakpoint($small) {
+  .news-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .news-date {
+    min-width: auto;
+  }
+
+  .news-links {
+    width: 100%;
+  }
+}
+

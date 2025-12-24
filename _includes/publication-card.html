@@ -1,0 +1,50 @@
+{% comment %}
+  Publication Card Component
+  
+  Parameters:
+  - title: Publication title (required)
+  - title_url: URL for the title link (required)
+  - venue: Conference/journal name and year (required)
+  - authors: Author list (required)
+  - paper_url: URL to the paper (optional)
+  - arxiv_url: URL to arXiv (optional)
+  - arxiv_id: arXiv ID for display (optional)
+  - contribution: Contribution description (optional)
+{% endcomment %}
+
+<div class="publication-card">
+  <div class="publication-card__header">
+    <h3 class="publication-card__title">
+      <a href="{{ include.title_url }}" target="_blank">{{ include.title }}</a>
+    </h3>
+    <span class="publication-card__venue">{{ include.venue }}</span>
+  </div>
+  <p class="publication-card__authors">
+    <em>{{ include.authors }}</em>
+  </p>
+  {% if include.paper_url or include.arxiv_url %}
+  <div class="publication-card__links">
+    {% if include.paper_url %}
+    <a href="{{ include.paper_url }}" target="_blank">📄 Paper</a>
+    {% endif %}
+    {% if include.paper_url and include.arxiv_url %}
+    <span class="separator">|</span>
+    {% endif %}
+    {% if include.arxiv_url %}
+    <a href="{{ include.arxiv_url }}" target="_blank">
+      {% if include.arxiv_id %}
+      🔗 arXiv:{{ include.arxiv_id }}
+      {% else %}
+      🔗 arXiv
+      {% endif %}
+    </a>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if include.contribution %}
+  <p class="publication-card__contribution">
+    <em>{{ include.contribution }}</em>
+  </p>
+  {% endif %}
+</div>
+
