@@ -22,12 +22,23 @@ My research focuses on task planning and control of multi-agent systems.
 <div class="module-divider"></div>
 <div class="news-item">
   <div class="news-header">
+    <span class="news-date">May 2026</span>
+    <span class="news-links">
+      <a href="https://arxiv.org/abs/2605.07877" class="news-link" target="_blank">📄 arXiv</a>
+    </span>
+  </div>
+  <span class="news-content">New <b>preprint</b>: <i><u>Melding LLM and temporal logic for reliable human-swarm collaboration in complex scenarios</u></i>, Junfeng Chen, Yuxiao Zhu, <b>An Zhuo</b>, Xintong Zhang, Shuo Zhang, Guanghui Wen, Xiwang Dong, Meng Guo, Zhongkui Li.</span>
+</div>
+
+<div class="news-item">
+  <div class="news-header">
     <span class="news-date">Nov 2025</span>
     <span class="news-links">
+      <a href="https://ieeexplore.ieee.org/abstract/document/11300826" class="news-link" target="_blank">📄 IEEE Xplore</a>
       <a href="https://arxiv.org/abs/2504.02852" class="news-link" target="_blank">📄 arXiv</a>
     </span>
   </div>
-  <span class="news-content">Accepted <b>T-RO</b> Paper: <i><u>Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots</u></i>, Yike Qiao, Xiaodong He, <b>An Zhuo</b>, Zhiyong Sun, Weimin Bao, Zhongkui Li</span>
+  <span class="news-content">Our paper <i><u>Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots</u></i> has been officially accepted by <b>IEEE Transactions on Robotics (T-RO)</b>. Authors: Yike Qiao, Xiaodong He, <b>An Zhuo</b>, Zhiyong Sun, Weimin Bao, Zhongkui Li.</span>
 </div>
 
 <div class="news-item">
@@ -68,12 +79,22 @@ My research focuses on task planning and control of multi-agent systems.
 
 <div class="module-divider"></div>
 
+{% include publication-card.html
+   title="Melding LLM and temporal logic for reliable human-swarm collaboration in complex scenarios"
+   title_url="https://arxiv.org/abs/2605.07877"
+   venue="arXiv preprint (2026)"
+   authors="Junfeng Chen, Yuxiao Zhu, <strong>An Zhuo</strong>, Xintong Zhang, Shuo Zhang, Guanghui Wen, Xiwang Dong, Meng Guo, Zhongkui Li"
+   paper_url="https://arxiv.org/abs/2605.07877"
+   arxiv_url="https://arxiv.org/abs/2605.07877"
+   arxiv_id="2605.07877"
+%}
+
 {% include publication-card.html 
    title="Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots"
-   title_url="https://arxiv.org/abs/2504.02852"
+   title_url="https://ieeexplore.ieee.org/abstract/document/11300826"
    venue="T-RO 2025"
    authors="Yike Qiao, Xiaodong He, <strong>An Zhuo</strong>, Zhiyong Sun, Weimin Bao, Zhongkui Li"
-   paper_url="https://arxiv.org/abs/2504.02852"
+   paper_url="https://ieeexplore.ieee.org/abstract/document/11300826"
    arxiv_url="https://arxiv.org/abs/2504.02852"
    arxiv_id="2504.02852"
    contribution="Contribution: Designed and conducted experiments in the paper"
