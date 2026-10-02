@@ -12,39 +12,40 @@
   - contribution: Contribution description (optional)
 {% endcomment %}
 
+{% assign publication = include.publication | default: include %}
 <div class="publication-card">
   <div class="publication-card__header">
     <h3 class="publication-card__title">
-      <a href="{{ include.title_url }}" target="_blank">{{ include.title }}</a>
+      <a href="{{ publication.title_url }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a>
     </h3>
-    <span class="publication-card__venue">{{ include.venue }}</span>
+    <span class="publication-card__venue">{{ publication.venue }}</span>
   </div>
   <p class="publication-card__authors">
-    <em>{{ include.authors }}</em>
+    {{ publication.authors }}
   </p>
-  {% if include.paper_url or include.arxiv_url %}
+  {% if publication.contribution %}
+  <p class="publication-card__contribution">
+    <em>{{ publication.contribution }}</em>
+  </p>
+  {% endif %}
+  {% if publication.paper_url or publication.arxiv_url %}
   <div class="publication-card__links">
-    {% if include.paper_url %}
-    <a href="{{ include.paper_url }}" target="_blank">📄 Paper</a>
+    {% if publication.paper_url %}
+    <a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">Paper</a>
     {% endif %}
-    {% if include.paper_url and include.arxiv_url %}
+    {% if publication.paper_url and publication.arxiv_url %}
     <span class="separator">|</span>
     {% endif %}
-    {% if include.arxiv_url %}
-    <a href="{{ include.arxiv_url }}" target="_blank">
-      {% if include.arxiv_id %}
-      🔗 arXiv:{{ include.arxiv_id }}
+    {% if publication.arxiv_url %}
+    <a href="{{ publication.arxiv_url }}" target="_blank" rel="noopener noreferrer">
+      {% if publication.arxiv_id %}
+      arXiv:{{ publication.arxiv_id }}
       {% else %}
-      🔗 arXiv
+      arXiv
       {% endif %}
     </a>
     {% endif %}
   </div>
   {% endif %}
-  {% if include.contribution %}
-  <p class="publication-card__contribution">
-    <em>{{ include.contribution }}</em>
-  </p>
-  {% endif %}
-</div>
 
+</div>

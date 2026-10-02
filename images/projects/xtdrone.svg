@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <rect width="640" height="400" fill="#f2f4f7"/>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="320" y="61" font-size="21" font-weight="600" fill="#172b45">UAV simulation workflow</text>
+    <g stroke="#194b9b" stroke-width="3" fill="none">
+      <path d="M285 123l70 70m0-70l-70 70"/>
+      <circle cx="285" cy="123" r="20"/><circle cx="355" cy="123" r="20"/>
+      <circle cx="285" cy="193" r="20"/><circle cx="355" cy="193" r="20"/>
+      <rect x="305" y="143" width="30" height="30" rx="8" fill="#194b9b"/>
+    </g>
+    <path d="M320 220v35m-173 0h346m-346 0v22m173-22v22m173-22v22" stroke="#a7bbcc" stroke-width="2" fill="none"/>
+    <g fill="#fff" stroke="#ccd4de">
+      <rect x="70" y="279" width="154" height="75" rx="8"/>
+      <rect x="243" y="279" width="154" height="75" rx="8"/>
+      <rect x="416" y="279" width="154" height="75" rx="8"/>
+    </g>
+    <g font-size="20" font-weight="600" fill="#194b9b">
+      <text x="147" y="310">PX4</text><text x="320" y="310">ROS</text><text x="493" y="310">Gazebo</text>
+    </g>
+    <g font-size="14" fill="#526174">
+      <text x="147" y="335">Flight control</text><text x="320" y="335">Algorithms</text><text x="493" y="335">Simulation</text>
+    </g>
+  </g>
+</svg>

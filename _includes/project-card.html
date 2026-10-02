@@ -2,7 +2,7 @@
 
 {% comment %}
   Project Card Component
-  
+
   Parameters:
   - title: Project title (required)
   - role: Role/position in the project (optional)
@@ -17,31 +17,35 @@
   - website_url: Website URL (optional)
 {% endcomment %}
 
+{% assign project = include.project | default: include %}
 <div class="project-card">
   <div class="project-card__content">
-    {% if include.image %}
+    {% if project.image %}
     <div class="project-card__image">
-      <img src="{% if include.image contains '://' %}{{ include.image }}{% else %}{{ include.image | prepend: '/images/' | prepend: base_path }}{% endif %}" 
-           alt="{{ include.image_alt | default: include.title }}">
+      <img src="{% if project.image contains '://' %}{{ project.image }}{% else %}{{ project.image | prepend: '/images/' | prepend: base_path }}{% endif %}"
+           alt="{{ project.image_alt | default: project.title }}" loading="lazy">
     </div>
     {% endif %}
-    
+
     <div class="project-card__body">
       <div class="project-card__header">
-        <h3 class="project-card__title">{{ include.title }}</h3>
-        {% if include.role %}
-        <p class="project-card__role"><em>{{ include.role }}</em></p>
+        <h3 class="project-card__title">{{ project.title }}</h3>
+        {% if project.role %}
+        <p class="project-card__role">{{ project.role }}</p>
         {% endif %}
       </div>
-      
-      {% if include.description %}
+
+      {% if project.description %}
       <div class="project-card__description">
-        {{ include.description | markdownify }}
+        {{ project.description | markdownify }}
       </div>
       {% endif %}
-      
-      {% if include.features and include.features != "" and include.features != " " %}
-        {% assign features_list = include.features | split: "|" %}
+
+      {% if project.contribution %}
+      <p class="project-card__contribution"><strong>Key contributions:</strong> {{ project.contribution }}</p>
+      {% endif %}
+      {% if project.features and project.features != "" and project.features != " " %}
+        {% assign features_list = project.features | split: "|" %}
         {% assign features_count = 0 %}
         {% for feature in features_list %}
           {% assign trimmed_feature = feature | strip %}
@@ -60,27 +64,26 @@
         </ul>
         {% endif %}
       {% endif %}
-      
-      {% if include.github_url or include.gitee_url or include.video_url or include.demo_url or include.website_url %}
+
+      {% if project.github_url or project.gitee_url or project.video_url or project.demo_url or project.website_url %}
       <div class="project-card__links">
-        {% if include.github_url %}
-        <a href="{{ include.github_url }}" target="_blank" rel="noopener noreferrer">🔗 GitHub</a>
+        {% if project.github_url %}
+        <a href="{{ project.github_url }}" target="_blank" rel="noopener noreferrer">GitHub</a>
         {% endif %}
-        {% if include.gitee_url %}
-        <a href="{{ include.gitee_url }}" target="_blank" rel="noopener noreferrer">🔗 Gitee</a>
+        {% if project.gitee_url %}
+        <a href="{{ project.gitee_url }}" target="_blank" rel="noopener noreferrer">Gitee</a>
         {% endif %}
-        {% if include.video_url %}
-        <a href="{{ include.video_url }}" target="_blank" rel="noopener noreferrer">🎥 Video</a>
+        {% if project.video_url %}
+        <a href="{{ project.video_url }}" target="_blank" rel="noopener noreferrer">Video</a>
         {% endif %}
-        {% if include.demo_url %}
-        <a href="{{ include.demo_url }}" target="_blank" rel="noopener noreferrer">🚀 Demo</a>
+        {% if project.demo_url %}
+        <a href="{{ project.demo_url }}" target="_blank" rel="noopener noreferrer">Demo</a>
         {% endif %}
-        {% if include.website_url %}
-        <a href="{{ include.website_url }}" target="_blank" rel="noopener noreferrer">🌐 Website</a>
+        {% if project.website_url %}
+        <a href="{{ project.website_url | relative_url }}">Project details</a>
         {% endif %}
       </div>
       {% endif %}
     </div>
   </div>
 </div>
-

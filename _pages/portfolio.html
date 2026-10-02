@@ -1,13 +1,13 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
-
-
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
+<p>Open source tools for UAV simulation and quadruped robot mapping and navigation.</p>
+<div class="card-grid card-grid--projects">
+{% for project in site.data.projects %}
+  {% include project-card.html project=project %}
 {% endfor %}
+</div>

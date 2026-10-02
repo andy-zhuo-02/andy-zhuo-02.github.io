@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Homepage"
+title                    : "Zhuo An"
 title_separator          : "-"
 name                     : &name "Zhuo An"
 description              : &description "Ph.D. Candidate, Peking University"
@@ -24,10 +24,10 @@ author:
   avatar           : "personal_photo.jpg"
   name             : "Zhuo An"
   pronouns         : "he/him"  
-  bio              : "Ph.D. Candidate in Peking University"
+  bio              : "Ph.D. Candidate, Peking University"
   location         : "Beijing, China"
-  employer         : "Peking University"
-  uri              : "https://andy-zhuo-02.github.io"
+  employer         :
+  uri              :
   email            : "zhuoan@stu.pku.edu.cn" 
 
   # Academic websites
@@ -43,7 +43,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "https://github.com/andy-zhuo-02"
+  github           : "andy-zhuo-02"
   gitee            : "https://gitee.com/andy_zhuo"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
