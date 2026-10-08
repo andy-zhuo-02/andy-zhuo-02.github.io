@@ -12,9 +12,10 @@
   title_url: "https://ieeexplore.ieee.org/abstract/document/11300826"
   category: journals
   image: "publication-cvf.png"
-  image_alt: "Multi-robot motion planning experiment using curvature-constrained vector fields"
+  image_alt: "Vector field-based motion planning framework for nonholonomic robots with curvature constraints"
   venue: "IEEE Transactions on Robotics · 2025"
   authors: "Yike Qiao, Xiaodong He, <strong>An Zhuo</strong>, Zhiyong Sun, Weimin Bao, Zhongkui Li"
   paper_url: "https://ieeexplore.ieee.org/abstract/document/11300826"
+  paper_label: "IEEE Xplore"
   arxiv_url: "https://arxiv.org/abs/2504.02852"
   arxiv_id: "2504.02852"

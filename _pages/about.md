@@ -20,38 +20,39 @@ redirect_from:
   </nav>
 </div>
 
-<section class="section-card" aria-labelledby="news">
-<h2 id="news">News</h2>
+<h2 class="home-section-title" id="news"><span aria-hidden="true">📰</span> News</h2>
+
+<section class="section-card section-card--news" aria-labelledby="news">
 
 <div class="news-item">
   <div class="news-header">
     <span class="news-date">May 2026</span>
     <span class="news-links">
-      <a href="https://arxiv.org/abs/2605.07877" class="news-link" target="_blank">arXiv</a>
+      <a href="https://arxiv.org/abs/2605.07877" class="news-link" target="_blank" rel="noopener noreferrer">arXiv</a>
     </span>
   </div>
-  <span class="news-content">New preprint on <a href="https://arxiv.org/abs/2605.07877">LLMs and temporal logic for reliable human-swarm collaboration</a>.</span>
+  <div class="news-content">Our new preprint, “Melding LLM and temporal logic for reliable human-swarm collaboration in complex scenarios,” is available on arXiv.</div>
 </div>
 
 <div class="news-item">
   <div class="news-header">
     <span class="news-date">Nov 2025</span>
     <span class="news-links">
-      <a href="https://ieeexplore.ieee.org/abstract/document/11300826" class="news-link" target="_blank">IEEE Xplore</a>
-      <a href="https://arxiv.org/abs/2504.02852" class="news-link" target="_blank">arXiv</a>
+      <a href="https://ieeexplore.ieee.org/abstract/document/11300826" class="news-link" target="_blank" rel="noopener noreferrer">IEEE Xplore</a>
+      <a href="https://arxiv.org/abs/2504.02852" class="news-link" target="_blank" rel="noopener noreferrer">arXiv</a>
     </span>
   </div>
-  <span class="news-content">Our paper on <a href="https://ieeexplore.ieee.org/abstract/document/11300826">curvature-constrained motion planning</a> was accepted by <strong>IEEE Transactions on Robotics</strong>.</span>
+  <div class="news-content">Our paper, “Curvature-Constrained Vector Field for Motion Planning of Nonholonomic Robots,” was accepted by <strong>IEEE Transactions on Robotics</strong>.</div>
 </div>
 
 <div class="news-item">
   <div class="news-header">
     <span class="news-date">Aug 2025</span>
     <span class="news-links">
-      <a href="https://github.com/andy-zhuo-02/XTDrone2" class="news-link" target="_blank">GitHub</a>
+      <a href="https://github.com/andy-zhuo-02/XTDrone2" class="news-link" target="_blank" rel="noopener noreferrer">GitHub</a>
     </span>
   </div>
-  <span class="news-content">Release <b>repository</b> <strong>XTDrone2</strong>: UAV Simulation Platform based on PX4, ROS2 and Gazebo Ignition.</span>
+  <div class="news-content">Release <b>repository</b> <strong>XTDrone2</strong>: UAV Simulation Platform based on PX4, ROS2 and Gazebo Ignition.</div>
 </div>
 
 <details class="news-archive"><summary>Earlier news</summary>
@@ -59,27 +60,27 @@ redirect_from:
   <div class="news-header">
     <span class="news-date">June 2025</span>
     <span class="news-links">
-      <a href="https://github.com/andy-zhuo-02/go2_ros2_toolbox" class="news-link" target="_blank">GitHub</a>
-      <a href="https://www.bilibili.com/video/BV1ioN9zrEpf" class="news-link" target="_blank">Video</a>
+      <a href="https://github.com/andy-zhuo-02/go2_ros2_toolbox" class="news-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.bilibili.com/video/BV1ioN9zrEpf" class="news-link" target="_blank" rel="noopener noreferrer">Video</a>
     </span>
   </div>
-  <span class="news-content">Release <b>repository</b> <i><u>go2_ros2_toolbox</u></i>: A comprehensive ROS2 toolbox for Unitree Go2 EDU robot, providing SLAM and navigation capabilities for autonomous operation.</span>
+  <div class="news-content">Release <b>repository</b> <i><u>go2_ros2_toolbox</u></i>: A comprehensive ROS2 toolbox for Unitree Go2 EDU robot, providing SLAM and navigation capabilities for autonomous operation.</div>
 </div>
 
 <div class="news-item">
   <div class="news-header">
     <span class="news-date">Spring Semester 2025</span>
     <span class="news-links">
-      <a href="https://andy-zhuo-02.github.io/teaching/2025-Engineering_Innovation" class="news-link" target="_blank">Info</a>
+      <a href="https://andy-zhuo-02.github.io/teaching/2025-Engineering_Innovation" class="news-link" target="_blank" rel="noopener noreferrer">Info</a>
     </span>
   </div>
-  <span class="news-content"><b>Teaching Assistant</b> for <i><u>Engineering Innovation</u></i> course at Peking University</span>
+  <div class="news-content"><b>Teaching Assistant</b> for <i><u>Engineering Innovation</u></i> course at Peking University</div>
 </div>
 
 </details>
 </section>
 
-## Publications
+<h2 class="home-section-title" id="publications"><span aria-hidden="true">📚</span> Publications</h2>
 
 <div class="card-grid card-grid--publications">
 {% for publication in site.data.publications %}
@@ -87,7 +88,7 @@ redirect_from:
 {% endfor %}
 </div>
 
-## Open Source Projects
+<h2 class="home-section-title" id="open-source-projects"><span aria-hidden="true">🛠️</span> Open Source Projects</h2>
 
 <div class="card-grid card-grid--projects">
 {% for project in site.data.projects %}
@@ -95,8 +96,9 @@ redirect_from:
 {% endfor %}
 </div>
 
+<h2 class="home-section-title" id="contact"><span aria-hidden="true">📬</span> Contact</h2>
+
 <section class="section-card" aria-labelledby="contact">
-<h2 id="contact">Contact</h2>
 <ul class="contact-list">
   <li><strong>Email</strong><a href="mailto:zhuoan@stu.pku.edu.cn">zhuoan@stu.pku.edu.cn</a></li>
   <li><strong>GitHub</strong><a href="https://github.com/andy-zhuo-02">andy-zhuo-02</a></li>

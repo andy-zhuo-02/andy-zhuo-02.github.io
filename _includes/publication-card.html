@@ -9,7 +9,7 @@
   - authors: Author list (required)
   - paper_url: URL to the paper (optional)
   - arxiv_url: URL to arXiv (optional)
-  - arxiv_id: arXiv ID for display (optional)
+  - paper_label: Platform name for the paper link (optional)
   - project_url: URL to the project homepage (optional)
 {% endcomment %}
 
@@ -34,24 +34,14 @@
   {% if publication.paper_url or publication.arxiv_url or publication.project_url %}
   <div class="publication-card__links">
     {% if publication.paper_url %}
-    <a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">Paper</a>
-    {% endif %}
-    {% if publication.paper_url and publication.arxiv_url %}
-    <span class="separator">|</span>
+    <a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">{{ publication.paper_label | default: 'Paper' }}</a>
     {% endif %}
     {% if publication.arxiv_url %}
     <a href="{{ publication.arxiv_url }}" target="_blank" rel="noopener noreferrer">
-      {% if publication.arxiv_id %}
-      arXiv:{{ publication.arxiv_id }}
-      {% else %}
       arXiv
-      {% endif %}
     </a>
     {% endif %}
     {% if publication.project_url %}
-    {% if publication.paper_url or publication.arxiv_url %}
-    <span class="separator">|</span>
-    {% endif %}
     <a href="{{ publication.project_url }}" target="_blank" rel="noopener noreferrer">Project Page</a>
     {% endif %}
   </div>
