@@ -12,6 +12,7 @@ redirect_from:
   <h1 class="page__title">{{ page.title }}</h1>
   <p class="home-intro__role">Ph.D. Candidate · Peking University</p>
   <p>At the School of Advanced Manufacturing and Robotics, I study task planning and control of multi-agent systems. Alongside my research, I develop UAV simulation tools and integrate mapping and navigation for quadruped robots.</p>
+  <p>My advisor is <a href="https://www.zhongkuili-pku.com/home/" target="_blank" rel="noopener noreferrer">Prof. Zhongkui Li</a>.</p>
   <nav class="home-intro__links" aria-label="Quick links">
     <a href="{{ '/publications/' | relative_url }}">Publications</a>
     <a href="https://github.com/andy-zhuo-02">GitHub</a>

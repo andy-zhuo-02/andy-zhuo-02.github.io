@@ -1,3 +1,4 @@
+{% include base_path %}
 {% comment %}
   Publication Card Component
   
@@ -9,11 +10,18 @@
   - paper_url: URL to the paper (optional)
   - arxiv_url: URL to arXiv (optional)
   - arxiv_id: arXiv ID for display (optional)
-  - contribution: Contribution description (optional)
+  - project_url: URL to the project homepage (optional)
 {% endcomment %}
 
 {% assign publication = include.publication | default: include %}
 <div class="publication-card">
+  {% if publication.image %}
+  <div class="publication-card__image">
+    <img src="{% if publication.image contains '://' %}{{ publication.image }}{% else %}{{ publication.image | prepend: '/images/' | prepend: base_path }}{% endif %}"
+         alt="{{ publication.image_alt | default: publication.title }}" loading="lazy">
+  </div>
+  {% endif %}
+  <div class="publication-card__body">
   <div class="publication-card__header">
     <h3 class="publication-card__title">
       <a href="{{ publication.title_url }}" target="_blank" rel="noopener noreferrer">{{ publication.title }}</a>
@@ -23,12 +31,7 @@
   <p class="publication-card__authors">
     {{ publication.authors }}
   </p>
-  {% if publication.contribution %}
-  <p class="publication-card__contribution">
-    <em>{{ publication.contribution }}</em>
-  </p>
-  {% endif %}
-  {% if publication.paper_url or publication.arxiv_url %}
+  {% if publication.paper_url or publication.arxiv_url or publication.project_url %}
   <div class="publication-card__links">
     {% if publication.paper_url %}
     <a href="{{ publication.paper_url }}" target="_blank" rel="noopener noreferrer">Paper</a>
@@ -45,7 +48,14 @@
       {% endif %}
     </a>
     {% endif %}
+    {% if publication.project_url %}
+    {% if publication.paper_url or publication.arxiv_url %}
+    <span class="separator">|</span>
+    {% endif %}
+    <a href="{{ publication.project_url }}" target="_blank" rel="noopener noreferrer">Project Page</a>
+    {% endif %}
   </div>
   {% endif %}
 
+  </div>
 </div>

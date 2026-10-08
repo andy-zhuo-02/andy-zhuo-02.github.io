@@ -9,4 +9,8 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages'
+gem 'csv'
+gem 'bigdecimal'
+# Build for the installed Ruby instead of using an older Windows binary.
+gem 'eventmachine', '1.2.7', force_ruby_platform: true
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

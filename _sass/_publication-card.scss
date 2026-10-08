@@ -1,9 +1,22 @@
 .publication-card {
   background: #fff;
-  padding: 20px 24px;
+  padding: 0;
+  overflow: hidden;
   margin: 16px 0;
   border: 1px solid $border-color;
   border-radius: 8px;
+}
+.publication-card__image {
+  width: 100%;
+  aspect-ratio: 8 / 5;
+  background: $surface-color;
+  img { display: block; width: 100%; height: 100%; object-fit: contain; }
+}
+.publication-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 22px;
 }
 .publication-card__header {
   display: flex;
@@ -40,13 +53,6 @@
   a:hover { text-decoration: underline; }
   .separator { color: #bcc3ca; }
 }
-.publication-card .publication-card__contribution {
-  color: $muted-color;
-  margin: 14px 0 0;
-  padding-top: 12px;
-  border-top: 1px solid $border-color;
-  font-size: 0.85em;
-}
 @media (max-width: 600px) {
-  .publication-card { padding: 16px; }
+  .publication-card__body { padding: 20px; }
 }
