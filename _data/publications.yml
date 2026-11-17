@@ -1,3 +1,12 @@
+- title: "DIVAL: Diffeomorphic Vector-Field Alignment for Nonholonomic Motion Planning"
+  title_url: "https://arxiv.org/abs/2611.14918"
+  category: preprints
+  venue: "arXiv preprint · 2026"
+  authors: "Yike Qiao, Xiaodong He, <strong>An Zhuo</strong>, Zhiyong Sun, Weimin Bao, Zhongkui Li"
+  arxiv_url: "https://arxiv.org/abs/2611.14918"
+  arxiv_id: "2611.14918"
+  image: "publication-dival.svg"
+  image_alt: "Comparison of vector-field tracking with an initial heading mismatch and DIVAL's collision-free motion planning"
 - title: "Melding LLM and temporal logic for reliable human-swarm collaboration in complex scenarios"
   title_url: "https://arxiv.org/abs/2605.07877"
   category: preprints

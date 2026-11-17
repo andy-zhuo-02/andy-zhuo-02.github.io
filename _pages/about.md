@@ -26,6 +26,16 @@ redirect_from:
 
 <div class="news-item">
   <div class="news-header">
+    <span class="news-date">Nov 2026</span>
+    <span class="news-links">
+      <a href="https://arxiv.org/abs/2611.14918" class="news-link" target="_blank" rel="noopener noreferrer">arXiv</a>
+    </span>
+  </div>
+  <div class="news-content">Our new preprint, “DIVAL: Diffeomorphic Vector-Field Alignment for Nonholonomic Motion Planning,” is available on arXiv.</div>
+</div>
+
+<div class="news-item">
+  <div class="news-header">
     <span class="news-date">May 2026</span>
     <span class="news-links">
       <a href="https://arxiv.org/abs/2605.07877" class="news-link" target="_blank" rel="noopener noreferrer">arXiv</a>
